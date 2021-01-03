@@ -45,6 +45,7 @@ export default function Save(props, {navigation}) {
       .add({
         downloadURL,
         caption,
+        likeCount: 0,
         creation: firebase.firestore.FieldValue.serverTimestamp()
       }).then((function() {
         // Returns to the initial route of the app.
