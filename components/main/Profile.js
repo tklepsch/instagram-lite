@@ -115,9 +115,7 @@ function Profile(props) {
               />
             }
           </View>
-        ): null}
-        <Button title="Logout" onPress={() => onLogout()}
-        />
+        ): <Button title="Logout" onPress={() => onLogout()} />}
       </View>
       <View styles={styles.containerInfo}>
         <FlatList
